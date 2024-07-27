@@ -1,0 +1,19 @@
+.center {
+  text-align: center;
+}
+
+.flex-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 600;
+}

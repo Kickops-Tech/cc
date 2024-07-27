@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bamboo.css/dist/light.min.css"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+    <title>@kickops/cc</title>
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <h1>@kickops/cc</h1>
+        <blockquote>
+          Credit card validation library, based upon
+          <a href="https://github.com/contaazul/creditcard.js" target="_blank"
+            ><code>creditcard.js</code></a
+          >, TypeScript-based, borrows some additional data from other sources.
+        </blockquote>
+
+        <div>
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=kickops-tech&repo=cc&type=star&count=true"
+            frameborder="0"
+            scrolling="0"
+            width="150"
+            height="20"
+            title="GitHub"
+          ></iframe>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="form">
+        <p>Use the form below to test card validation:</p>
+
+        <label for="cc">Credit Card Number</label>
+        <input
+          type="text"
+          id="cc"
+          placeholder="**** **** **** ****"
+          value="4444444444444448"
+        />
+      </div>
+
+      <hr />
+
+      <div>
+        <p>
+          <strong>Test card output:</strong>
+        </p>
+
+        <ul>
+          <li id="flag-name"></li>
+          <li id="flag"></li>
+          <li id="valid"></li>
+          <li id="valid-digit"></li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <div>
+        <p class="center">
+          MIT &copy;
+          <a href="https://kickops.dev" target="_blank">Kickops</a>, 2024.
+          <br />
+          <a href="https://github.com/rilwis/bamboo" target="_blank">Bamboo</a>
+          theme by
+          <a href="https://github.com/rilwis" target="_blank">@rilwis</a>.
+        </p>
+      </div>
+    </div>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>

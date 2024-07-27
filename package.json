@@ -1,0 +1,53 @@
+{
+  "name": "@kickops/cc",
+  "version": "0.0.0",
+  "description": "Credit card validation library, based on `creditcard.js`. Still aiming to be simple.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kickops/cc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kickops/cc/issues"
+  },
+  "homepage": "https://github.com/kickops/cc#readme",
+  "keywords": [
+    "creditcard",
+    "formatting",
+    "javascript",
+    "typescript",
+    "validation"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Fabio Y. Goto",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "default": "./dist/index.es.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "preview": "vite preview",
+    "publish": "node ./bin/release.js",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "consola": "^3.2.3",
+    "jsdom": "^24.1.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4",
+    "vitest": "^2.0.4"
+  }
+}

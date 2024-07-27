@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "~": ["lib"],
+      "~/*": ["lib/*"],
+      "@": ["src"],
+      "@/*": ["src/*"],
+      "#": ["test"],
+      "#/*": ["test/*"]
+    },
+    "declaration": true,
+    "declarationDir": "dist",
+    "lib": [
+      "ES5",
+      "ES6",
+      "ES7",
+      "ESNext",
+      "ES2020",
+      "DOM",
+      "DOM.Iterable",
+      "ES2015.Core"
+    ],
+    "module": "ESNext",
+    "outDir": "dist",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "removeComments": false,
+    "resolveJsonModule": true,
+
+    /* Linting */
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true
+  },
+  "include": ["lib", "test", "src"],
+  "exclude": ["node_modules"]
+}
