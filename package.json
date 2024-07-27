@@ -4,12 +4,12 @@
   "description": "Credit card validation library, based on `creditcard.js`. Still aiming to be simple.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kickops/cc.git"
+    "url": "git+https://github.com/kickops-tech/cc.git"
   },
   "bugs": {
-    "url": "https://github.com/kickops/cc/issues"
+    "url": "https://github.com/kickops-tech/cc/issues"
   },
-  "homepage": "https://github.com/kickops/cc#readme",
+  "homepage": "https://github.com/kickops-tech/cc#readme",
   "keywords": [
     "creditcard",
     "formatting",
