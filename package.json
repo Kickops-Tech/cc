@@ -1,6 +1,6 @@
 {
   "name": "@kickops/cc",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Credit card validation library, based on `creditcard.js`. Still aiming to be simple.",
   "repository": {
     "type": "git",
