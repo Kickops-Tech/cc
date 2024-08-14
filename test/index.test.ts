@@ -10,11 +10,35 @@ import { describe, expect, it } from 'vitest';
 import {
   getFlag,
   getFlagName,
+  getFlagNameFromSlug,
   isCvvValid,
   isDigitValid,
   isExpDateValid,
   isValid,
 } from '~';
+
+/**
+ * This is a list of test flags and their respective slugs.
+ */
+const TEST_FLAG_NAME_SLUG_LIST = [
+  ['Banescard', 'banescard'],
+  ['Maxxvan', 'maxxvan'],
+  ['Cabal', 'cabal'],
+  ['GoodCard', 'goodcard'],
+  ['Elo', 'elo'],
+  ['Diners Club', 'diners'],
+  ['Discover', 'discover'],
+  ['American Express', 'amex'],
+  ['Aura', 'aura'],
+  ['Mastercard', 'mastercard'],
+  ['Visa', 'visa'],
+  ['Hipercard', 'hipercard'],
+  ['JCB', 'jcb'],
+  ['Credz', 'credz'],
+  ['Sorocred', 'sorocred'],
+  ['Personal Card', 'personal'],
+  ['Valecard', 'valecard'],
+];
 
 describe('getFlag', () => {
   it('Is exported and is a function', () => {
@@ -62,6 +86,19 @@ describe('getFlagName', () => {
   it('Invalid cards should always return `false`', () => {
     INVALID_CARD_LIST.forEach((card) => {
       expect(getFlagName(card)).toBe(false);
+    });
+  });
+});
+
+describe('getFlagNameFromSlug', () => {
+  it('Is exported and is a function', () => {
+    expect(getFlagNameFromSlug).toBeDefined();
+    expect(getFlagNameFromSlug).toBeInstanceOf(Function);
+  });
+
+  it("All test flags' slugs should return the correct name", () => {
+    TEST_FLAG_NAME_SLUG_LIST.forEach(([name, slug]) => {
+      expect(getFlagNameFromSlug(slug)).toBe(name);
     });
   });
 });

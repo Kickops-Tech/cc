@@ -458,6 +458,16 @@ export function getFlagName(number: string): string | false {
 }
 
 /**
+ * Retrieve the flag name related to the given flag slug.
+ *
+ * @param flag
+ *     Flag slug
+ */
+export function getFlagNameFromSlug(flag: Flag | string): string {
+  return FLAG_DATA_LIST[flag as Flag]?.flagName || '';
+}
+
+/**
  * Configuration for the validation process.
  */
 type ValidationConfig = {
